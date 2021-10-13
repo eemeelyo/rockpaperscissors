@@ -1,0 +1,74 @@
+* {
+  /* RESET-------------*/
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: "Press Start 2P", cursive;
+}
+
+body {
+  height: 100vh;
+  background:
+        /* top, transparent black, faked with gradient */ linear-gradient(
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)
+    ),
+    /* bottom, image */
+      url("../w3_rock-paper-scissors-eemeelyo/img/Background.jpg") no-repeat
+      center center/cover;
+}
+
+header {
+  text-align: center;
+  max-width: 1200px;
+  margin: 20px auto;
+  line-height: 50px;
+}
+
+h1 {
+  background-color: aqua;
+  opacity: 0.8;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+}
+.leftHand {
+  padding: 60px;
+}
+.rightHand {
+  padding: 60px;
+}
+
+#scores {
+  color: white;
+  text-align: center;
+}
+
+.scoreLabel {
+  padding: 50px;
+}
+p {
+  padding: 20px;
+}
+
+.buttons {
+  font-size: 20px;
+  border: yellow solid 5px;
+  margin: 0 50px;
+}
+
+.buttons:hover {
+  background-color: orange;
+}
+
+p#gameResult {
+  font-family: "Bungee Shade", cursive;
+  color: white;
+  font-size: 70px;
+  text-align: center;
+}

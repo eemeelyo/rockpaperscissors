@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Rock, Paper, Scissors</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/55a775b96e.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <header>
+      <h1>Rock, Paper, Scissors</h1>
+    </header>
+
+    <section id="scores">
+      <div class="flex-container">
+        <div class="computerScore scoreLabel">
+          <h3 class="computerName">Computer:</h3>
+          <p id="computerNumber">0</p>
+        </div>
+        <div class="gamesPlayed scoreLabel">
+          <h3 class="games">Games:</h3>
+          <p id="gamesNumber">0</p>
+        </div>
+        <div class="playersCore scoreLabel">
+          <h3 class="playerName">Player:</h3>
+          <p id="playerNumber">0</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="choices">
+      <div class="flex-container">
+        <div class="rock choices">
+          <input type="button" value="Rock" class="buttons" id="rockButton"></input>
+        </div>
+        <div class="paper choices">
+          <input type="button" value="Paper" class="buttons" id="paperButton"></input>
+        </div>
+        <div class="scissors choices">
+         <input type="button" value="Scissors" class="buttons" id="scissorsButton"></input>
+        </div>
+      </div>
+    </section>
+
+    <section id="winlose">
+      <div class="flex-container">
+        <p id="gameResult">Pick your hand!</p>
+      </div>
+    </section>
+
+    <section id="playersHands">
+      <div class="flex-container">
+        <div class="computer">
+          <img src="./img/Left-Rock.png" alt="Computer Hand" id="leftHand" />
+        </div>
+        <div class="player">
+          <img src="./img/Right-Rock.png" alt="player Hand" id="rightHand" />
+        </div>
+      </div>
+    </section>
+
+    <script src="main.js"></script>
+  </body>
+</html>
